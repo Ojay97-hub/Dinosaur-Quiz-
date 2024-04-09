@@ -148,6 +148,15 @@ function showQuestion() {
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
+  // UPDATING THE H1 WHEN DIFFERENT SET QUESTIONS ARE DISPLAYED GRABBING THE H1
+  if (currentSetIndex === 0) {
+    document.querySelector("h1").innerText = "Land Dinosaurs";
+  } else if (currentSetIndex === 1) {
+    document.querySelector("h1").innerText = "Ancient Marine Creatures";
+  } else if (currentSetIndex === 2) {
+    document.querySelector("h1").innerText = "Flying Dinosaurs";
+  }
+
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
