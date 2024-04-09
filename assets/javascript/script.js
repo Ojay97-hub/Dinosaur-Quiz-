@@ -1,3 +1,5 @@
+// THIS IS CODE FROM GREATSTACK SIMPLE QUIZ VIDEO
+
 const questions = [
   {
     question: "How many teeth did the tyrannosaurus rex have?",
@@ -33,6 +35,89 @@ const questions = [
       { text: "Mamenchisaurus", correct: true },
       { text: "Brachiosaurus", correct: false },
       { text: "Brontosaurus", correct: false },
+    ],
+  },
+];
+
+// ADDING TWO MORE CATEGORIES OF QUESTIONS FOR SEA AND AIR DINO'S:
+
+// MARINE BASED QUESTIONS
+const marineQuestions = [
+  {
+    question: "What was the largest ancient marine predator?",
+    answer: [
+      { text: "Mosasaurus", correct: true },
+      { text: "Kronosaurus", correct: false },
+      { text: "Dunkleosteus", correct: false },
+      { text: "Pliosaurus", correct: false },
+    ],
+  },
+  {
+    question: "Which ancient aquatic reptile resembled the loch ness monster?",
+    answer: [
+      { text: "Plesiosaurus", correct: true },
+      { text: "Hydrorion", correct: false },
+      { text: "Halisaurus", correct: false },
+      { text: "Cryptoclidus", correct: false },
+    ],
+  },
+  {
+    question: "Which one of the following is not an ancient marine reptile?",
+    answer: [
+      { text: "Ichthyosaurs", correct: false },
+      { text: "Nothosaurs", correct: false },
+      { text: "Thalattosaurs", correct: false },
+      { text: "Albertosaurus", correct: true },
+    ],
+  },
+  {
+    question: "Which sea creature is the longest that ever existed?",
+    answer: [
+      { text: "Man O war jellyfish", correct: true },
+      { text: "Shonisaurus sikanniensis", correct: false },
+      { text: "Blue Whale", correct: false },
+      { text: "Giant squid", correct: false },
+    ],
+  },
+];
+
+// AIR BASED QUESTIONS
+const airQuestions = [
+  {
+    question: "What is the correct term for flying dinosaurs?",
+    answer: [
+      { text: "Pterosaurs", correct: true },
+      { text: "Glideosaurs", correct: false },
+      { text: "Aeronautosaurs", correct: false },
+      { text: "Skydragons", correct: false },
+    ],
+  },
+  {
+    question: "What is the most well known Pterosaur?",
+    answer: [
+      { text: "Pterodactyl", correct: true },
+      { text: "Pterodaustro", correct: false },
+      { text: "Dimorphodon", correct: false },
+      { text: "Rhamphorhynchus", correct: false },
+    ],
+  },
+  {
+    question: "Which is the largest known species of Pterosaur?",
+    answer: [
+      { text: "Quetzalcoatlus", correct: false },
+      { text: "Hatzegopteryx", correct: true },
+      { text: "Cryodrakon boreas", correct: false },
+      { text: "Nemicolopterus", correct: false },
+    ],
+  },
+  {
+    question:
+      "How long could the biggest Pterosaurs be in the sky and at what altitude?",
+    answer: [
+      { text: "8 - 10 days at 15,000ft", correct: true },
+      { text: "5 - 7 at 20,000ft ", correct: false },
+      { text: "3 - 5 at 30,000ft", correct: false },
+      { text: "2 - 3 at 10,000ft", correct: false },
     ],
   },
 ];
