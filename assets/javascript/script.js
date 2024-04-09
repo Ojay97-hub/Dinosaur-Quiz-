@@ -1,5 +1,6 @@
 // THIS IS CODE FROM GREATSTACK SIMPLE QUIZ VIDEO
 
+// AN OBJECT OF MULTIPLE CHOICE QUESTIONS, A STRING AND AN ARRAY OF POSSIBLE ANSWERS (object with 2 properties text and correct)
 const questions = [
   {
     question: "How many teeth did the tyrannosaurus rex have?",
@@ -45,7 +46,7 @@ const questions = [
 const marineQuestions = [
   {
     question: "What was the largest ancient marine predator?",
-    answer: [
+    answers: [
       { text: "Mosasaurus", correct: true },
       { text: "Kronosaurus", correct: false },
       { text: "Dunkleosteus", correct: false },
@@ -54,7 +55,7 @@ const marineQuestions = [
   },
   {
     question: "Which ancient aquatic reptile resembled the loch ness monster?",
-    answer: [
+    answers: [
       { text: "Plesiosaurus", correct: true },
       { text: "Hydrorion", correct: false },
       { text: "Halisaurus", correct: false },
@@ -63,7 +64,7 @@ const marineQuestions = [
   },
   {
     question: "Which one of the following is not an ancient marine reptile?",
-    answer: [
+    answers: [
       { text: "Ichthyosaurs", correct: false },
       { text: "Nothosaurs", correct: false },
       { text: "Thalattosaurs", correct: false },
@@ -72,7 +73,7 @@ const marineQuestions = [
   },
   {
     question: "Which sea creature is the longest that ever existed?",
-    answer: [
+    answers: [
       { text: "Man O war jellyfish", correct: true },
       { text: "Shonisaurus sikanniensis", correct: false },
       { text: "Blue Whale", correct: false },
@@ -85,7 +86,7 @@ const marineQuestions = [
 const airQuestions = [
   {
     question: "What is the correct term for flying dinosaurs?",
-    answer: [
+    answers: [
       { text: "Pterosaurs", correct: true },
       { text: "Glideosaurs", correct: false },
       { text: "Aeronautosaurs", correct: false },
@@ -94,7 +95,7 @@ const airQuestions = [
   },
   {
     question: "What is the most well known Pterosaur?",
-    answer: [
+    answers: [
       { text: "Pterodactyl", correct: true },
       { text: "Pterodaustro", correct: false },
       { text: "Dimorphodon", correct: false },
@@ -103,7 +104,7 @@ const airQuestions = [
   },
   {
     question: "Which is the largest known species of Pterosaur?",
-    answer: [
+    answers: [
       { text: "Quetzalcoatlus", correct: false },
       { text: "Hatzegopteryx", correct: true },
       { text: "Cryodrakon boreas", correct: false },
@@ -113,7 +114,7 @@ const airQuestions = [
   {
     question:
       "How long could the biggest Pterosaurs be in the sky and at what altitude?",
-    answer: [
+    answers: [
       { text: "8 - 10 days at 15,000ft", correct: true },
       { text: "5 - 7 at 20,000ft ", correct: false },
       { text: "3 - 5 at 30,000ft", correct: false },
@@ -125,11 +126,16 @@ const airQuestions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const setsOfQuestions = [questions, marineQuestions, airQuestions]; // added variable
 
-let currentQuestionIndex = 0;
+let currentSetIndex = 0;
+let currentQuestions = setsOfQuestions[currentSetIndex]; // added
+let currentQuestionIndex;
 let score = 0;
 
 function startQuiz() {
+  currentSetIndex = 0;
+  currentQuestions = setsOfQuestions[currentSetIndex];
   currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = "Next";
@@ -138,7 +144,7 @@ function startQuiz() {
 
 function showQuestion() {
   resetState();
-  let currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = currentQuestions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -153,6 +159,8 @@ function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
+
+// ADDING DISPLAY FUNCTIONS FOR MARINE AND AIR
 
 function resetState() {
   nextButton.style.display = "none";
@@ -179,28 +187,62 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
+// this score function only shows out of 4 - needs to show out of 12
 function showScore() {
+  // reset the state of the quiz
   resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  // calculate the total number of questions by summing up the lengths of all question sets
+  const totalQuestions = setsOfQuestions.reduce(
+    (total, set) => total + set.length,
+    0
+  );
+  // display the correct score message
+  questionElement.innerHTML = `You scored ${score} out of ${totalQuestions}!`;
+  // questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
 
+// original code
+
+//function handleNextButton() {
+// currentQuestionIndex++;
+//if (currentQuestionIndex < questions.length) {
+// showQuestion();
+// } else {
+//  showScore();
+// }
+// }
+
+// new function to incorporate all questions
 function handleNextButton() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < currentQuestions.length) {
     showQuestion();
   } else {
-    showScore();
+    if (currentSetIndex < setsOfQuestions.length - 1) {
+      // Move to the next set of questions
+      currentSetIndex++;
+      currentQuestions = setsOfQuestions[currentSetIndex];
+      currentQuestionIndex = 0;
+      showQuestion();
+    } else {
+      // Show score if all sets are completed
+      showScore();
+    }
   }
 }
 
-nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
-    handleNextButton();
-  } else {
-    startQuiz();
-  }
-});
+nextButton.addEventListener("click", handleNextButton); // changed eventlistener
+
+// original code
+
+// () => {
+// if (currentQuestionIndex < questions.length) {
+// handleNextButton();
+// } else {
+// startQuiz();
+// }
+// });
 
 startQuiz();
