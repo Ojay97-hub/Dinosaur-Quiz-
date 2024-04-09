@@ -1,38 +1,38 @@
 const questions = [
   {
-    question: "Which is larget animal in the world?",
+    question: "How many teeth did the tyrannosaurus rex have?",
     answers: [
-      { text: "Shark", correct: false },
-      { text: "Blue whale", correct: true },
-      { text: "Elephant", correct: false },
-      { text: "Giraffe", correct: false },
+      { text: "34", correct: false },
+      { text: "60", correct: true },
+      { text: "42", correct: false },
+      { text: "86", correct: false },
     ],
   },
   {
-    question: "Which is the smallest country in the world?",
+    question: "Which land predator was larger than the trex?",
     answers: [
-      { text: "Vatican City", correct: true },
-      { text: "Bhutan", correct: false },
-      { text: "Nepal", correct: false },
-      { text: "Shri Lanka", correct: false },
+      { text: "Spinosaurus", correct: true },
+      { text: "Giganotosaurus", correct: false },
+      { text: "Carnotaurus", correct: false },
+      { text: "Allosaurus ", correct: false },
     ],
   },
   {
-    question: "Which is the largest desert in the world?",
+    question: "What period did the velociraptors live in?",
     answers: [
-      { text: "Kalahari", correct: false },
-      { text: "Gobi", correct: false },
-      { text: "Sahara", correct: false },
-      { text: "Antarctica", correct: true },
+      { text: "Jurassic ", correct: false },
+      { text: "Triassic", correct: false },
+      { text: "Fantastic ", correct: false },
+      { text: "Cretaceous", correct: true },
     ],
   },
   {
-    question: "Which is the smallest continent in the world?",
+    question: "Which dinosaur had the longest neck?",
     answers: [
-      { text: "Asia", correct: false },
-      { text: "Australia", correct: true },
-      { text: "Arctic", correct: false },
-      { text: "Africa", correct: false },
+      { text: "Diplodocus", correct: false },
+      { text: "Mamenchisaurus", correct: true },
+      { text: "Brachiosaurus", correct: false },
+      { text: "Brontosaurus", correct: false },
     ],
   },
 ];
