@@ -233,7 +233,17 @@ function handleNextButton() {
   }
 }
 
-nextButton.addEventListener("click", handleNextButton); // changed eventlistener
+// nextButton.addEventListener("click", handleNextButton); // event listener for next button
+
+// Event listener for the "Next" button
+nextButton.addEventListener("click", () => {
+  if (nextButton.innerHTML === "Next") {
+    handleNextButton();
+  } else {
+    // Restart the quiz when the "Play Again" button is clicked
+    startQuiz();
+  }
+}); // now only one event listener is targeting the next button meaning both next and play again act correctly
 
 // original code
 
