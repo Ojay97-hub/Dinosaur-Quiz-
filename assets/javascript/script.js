@@ -152,11 +152,11 @@ function showQuestion() {
 
   // UPDATING THE H1 WHEN DIFFERENT SET QUESTIONS ARE DISPLAYED GRABBING THE H1
   if (currentSetIndex === 0) {
-    document.querySelector("h1").innerText = "Land Dinosaurs";
+    document.querySelector("h1").innerText = "LAND DINOSAURS";
   } else if (currentSetIndex === 1) {
-    document.querySelector("h1").innerText = "Ancient Marine Creatures";
+    document.querySelector("h1").innerText = "ANCIENT MARINE CREATURES";
   } else if (currentSetIndex === 2) {
-    document.querySelector("h1").innerText = "Flying Dinosaurs";
+    document.querySelector("h1").innerText = "FLYING DINOSAURS";
   }
 
   // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
