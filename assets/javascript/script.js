@@ -235,7 +235,7 @@ function showScore() {
     0
   );
   // display the correct score message & addug player name
-  questionElement.innerHTML = `Well done, ${playerName}You scored ${score} out of ${totalQuestions}!`;
+  questionElement.innerHTML = `<h1>End of Quiz</h1><p>Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!</p>`;
   // questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
