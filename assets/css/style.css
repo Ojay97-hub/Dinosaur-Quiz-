@@ -4,8 +4,18 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-body {
-  background: #001e4d;
+/* ADDING DINOSAUR BACKGROUNDS */
+body.land-dinosaurs {
+  background-image: url(../images/baby-trex.jpeg);
+  background: center cover no-repeat;
+}
+body.ancient-marine-creatures {
+  background-image: url(../images/scary-sea-creature.jpeg);
+  background: center cover no-repeat;
+}
+body.flying-dinosaurs {
+  background-image: url(../images/pterosaurs.jpeg);
+  background: center cover no-repeat;
 }
 .app {
   background: #fff;

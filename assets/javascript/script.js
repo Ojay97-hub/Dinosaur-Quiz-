@@ -1,6 +1,8 @@
 // THIS IS CODE FROM GREATSTACK SIMPLE QUIZ VIDEO
 
 // AN OBJECT OF MULTIPLE CHOICE QUESTIONS, A STRING AND AN ARRAY OF POSSIBLE ANSWERS (object with 2 properties text and correct)
+
+// LAND BASED QUESTIONS
 const questions = [
   {
     question: "How many teeth did the tyrannosaurus rex have?",
@@ -155,6 +157,15 @@ function showQuestion() {
     document.querySelector("h1").innerText = "Ancient Marine Creatures";
   } else if (currentSetIndex === 2) {
     document.querySelector("h1").innerText = "Flying Dinosaurs";
+  }
+
+  // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
+  if (currentSetIndex === 0) {
+    document.body.className = "land-dinosaurs";
+  } else if (currentSetIndex === 1) {
+    document.body.className = "ancient-marine-creatures";
+  } else if (currentSetIndex === 2) {
+    document.body.className = "flying-dinosaurs";
   }
 
   currentQuestion.answers.forEach((answer) => {
