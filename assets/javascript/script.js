@@ -281,8 +281,13 @@ nextButton.addEventListener("click", () => {
   if (nextButton.innerHTML === "Next") {
     handleNextButton();
   } else {
+    // Taking user back to the intro page on play again
+    intro.style.display = "block";
+    quizSection.style.display = "none";
+    nameInput.value = ""; // clearing name input
+    startButton.style.display = "block"; // display start button again
     // Restart the quiz when the "Play Again" button is clicked
-    startQuiz();
+    // startQuiz();
   }
 }); // now only one event listener is targeting the next button meaning both next and play again act correctly
 
