@@ -125,6 +125,11 @@ const airQuestions = [
   },
 ];
 
+// ADDING NEW ID ELEMENTS FOR INTRO
+const intro = document.getElementById("intro");
+const quizSection = document.getElementById("quiz-section");
+const nameInput = document.getElementById("name");
+const startButton = document.getElementById("start-btn");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -134,6 +139,8 @@ let currentSetIndex = 0;
 let currentQuestions = setsOfQuestions[currentSetIndex]; // added for new question sets
 let currentQuestionIndex;
 let score = 0;
+// new variable for name
+let playerName = "";
 
 function startQuiz() {
   currentSetIndex = 0;
