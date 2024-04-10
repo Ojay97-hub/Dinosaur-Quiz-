@@ -142,7 +142,17 @@ let score = 0;
 // new variable for name
 let playerName = "";
 
+// adapting startQuiz function to cater for intro page
 function startQuiz() {
+  // ensuring name is entered before quiz starts
+  playerName = nameInput.value.trim();
+  if (playerName === "") {
+    alert("Please enter your name before starting the quiz!!!");
+    return;
+  }
+  // Hiding intro and showing quiz with display none and block
+  intro.style.display = "none";
+  quizSection.style.display = "block";
   currentSetIndex = 0;
   currentQuestions = setsOfQuestions[currentSetIndex];
   currentQuestionIndex = 0;
@@ -224,8 +234,8 @@ function showScore() {
     (total, set) => total + set.length,
     0
   );
-  // display the correct score message
-  questionElement.innerHTML = `You scored ${score} out of ${totalQuestions}!`;
+  // display the correct score message & addug player name
+  questionElement.innerHTML = `Well done, ${playerName}You scored ${score} out of ${totalQuestions}!`;
   // questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
@@ -262,6 +272,9 @@ function handleNextButton() {
 }
 
 // nextButton.addEventListener("click", handleNextButton); // event listener for next button
+
+// event listener for start quiz button
+startButton.addEventListener("click", startQuiz);
 
 // Event listener for the "Next" button
 nextButton.addEventListener("click", () => {
