@@ -9,15 +9,18 @@
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
   background-image: url(../images/baby-trex.jpeg);
-  background: center cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body.ancient-marine-creatures {
   background-image: url(../images/scary-sea-creature.jpeg);
-  background: center cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body.flying-dinosaurs {
   background-image: url(../images/pterosaurs.jpeg);
-  background: center cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .app {
   background: #90aa82;
@@ -34,6 +37,10 @@ body.flying-dinosaurs {
   border-bottom: 1px solid #333;
   padding-bottom: 30px;
   text-align: center;
+}
+/* HIDING THE QUIZ AT START */
+#quiz-section {
+  display: none;
 }
 .quiz {
   padding: 20px 0;

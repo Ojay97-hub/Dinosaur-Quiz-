@@ -6,16 +6,31 @@
   </head>
   <body>
     <div class="app">
-      <h1>Title of set question goes here</h1>
-      <div class="quiz">
-        <h2 id="question">Question goes here</h2>
-        <div id="answer-buttons">
-          <button class="btn">Answer 1</button>
-          <button class="btn">Answer 2</button>
-          <button class="btn">Answer 3</button>
-          <button class="btn">Answer 4</button>
+      <!-- ADDING AN INTRO BEFORE QUIZ -->
+      <div id="intro">
+        <h2>WELCOME TO THE DINO QUIZ!</h2>
+        <p>
+          This is the most awesome dinosaur quiz ever! There are 3 categories
+          consisting of; Land, Sea, and Air based multiple choice questions with
+          4 answers to select from. Good Luck! The score is out of 12.
+        </p>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your name" />
+        <button id="start-btn">Start Quiz!</button>
+      </div>
+      <!-- THE QUIZ -->
+      <div id="quiz-section">
+        <h1>Title of set question goes here</h1>
+        <div class="quiz">
+          <h2 id="question">Question goes here</h2>
+          <div id="answer-buttons">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+          <button id="next-btn">Next</button>
         </div>
-        <button id="next-btn">Next</button>
       </div>
     </div>
     <script src="assets/javascript/script.js"></script>

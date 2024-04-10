@@ -131,7 +131,7 @@ const nextButton = document.getElementById("next-btn");
 const setsOfQuestions = [questions, marineQuestions, airQuestions]; // added variable
 
 let currentSetIndex = 0;
-let currentQuestions = setsOfQuestions[currentSetIndex]; // added
+let currentQuestions = setsOfQuestions[currentSetIndex]; // added for new question sets
 let currentQuestionIndex;
 let score = 0;
 
@@ -168,6 +168,7 @@ function showQuestion() {
     document.body.className = "flying-dinosaurs";
   }
 
+  // CREATING BUTTONS FOR ANSWERS
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
@@ -181,7 +182,6 @@ function showQuestion() {
 }
 
 // ADDING DISPLAY FUNCTIONS FOR MARINE AND AIR
-
 function resetState() {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -189,6 +189,7 @@ function resetState() {
   }
 }
 
+// SELECTING ANSWER & CHANGING COLOUR IF RIGHT/WRONG & BLOCKING CLICK ON SELECTION
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
