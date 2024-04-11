@@ -6,6 +6,10 @@
     Gill Sans MT, sans-serif;
   box-sizing: border-box;
 }
+/* adding background color */
+body {
+  background-color: #90aa82;
+}
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
   background-image: url(../images/baby-trex.jpeg);
@@ -27,6 +31,8 @@ body.flying-dinosaurs {
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
+  /* adding border */
+  border: 2px solid white;
   border-radius: 10px;
   padding: 30px;
 }
@@ -40,6 +46,10 @@ body.flying-dinosaurs {
 }
 /* HIDING THE QUIZ AT START */
 #quiz-section {
+  display: none;
+}
+/* HIDING SCORE SECTION */
+#score-section {
   display: none;
 }
 .quiz {
@@ -71,7 +81,7 @@ body.flying-dinosaurs {
   cursor: no-drop;
 }
 #next-btn {
-  background: #001e4d;
+  background: #000000bf;
   color: #fff;
   font-weight: 500;
   width: 150px;

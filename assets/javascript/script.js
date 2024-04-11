@@ -126,21 +126,26 @@ const airQuestions = [
 ];
 
 // ADDING NEW ID ELEMENTS FOR INTRO
+// INTRO
 const intro = document.getElementById("intro"); // added
-const quizSection = document.getElementById("quiz-section"); // added
 const nameInput = document.getElementById("name"); // added
 const startButton = document.getElementById("start-btn"); // added
+// QUIZ
+const quizSection = document.getElementById("quiz-section"); // added
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const setsOfQuestions = [questions, marineQuestions, airQuestions]; // added variable
+const setsOfQuestions = [questions, marineQuestions, airQuestions]; // added
+// SCORE
+const scoreSection = document.getElementById("score-section"); // added
+const scoreInfo = document.getElementById("score-info");
+const playAgainButton = document.getElementById("play-again-btn");
 
 let currentSetIndex = 0;
 let currentQuestions = setsOfQuestions[currentSetIndex]; // added for new question sets
 let currentQuestionIndex;
 let score = 0;
-// new variable for name
-let playerName = "";
+let playerName = ""; // new variable for name
 
 // adapting startQuiz function to cater for intro page
 function startQuiz() {
@@ -198,7 +203,7 @@ function showQuestion() {
   });
 }
 
-// ADDING DISPLAY FUNCTIONS FOR MARINE AND AIR
+// REMOVING ANSWER 1/2/3/4 FROM HTML
 function resetState() {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -225,7 +230,7 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
-// this score function only shows out of 4 - needs to show out of 12
+// this score function now shows out of 12 rather than original
 function showScore() {
   // reset the state of the quiz
   resetState();
@@ -234,10 +239,27 @@ function showScore() {
     (total, set) => total + set.length,
     0
   );
-  // display the correct score message & addug player name
-  questionElement.innerHTML = `<h1>End of Quiz</h1><p>Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!</p>`;
-  nextButton.innerHTML = "Play Again";
-  nextButton.style.display = "block";
+
+  // CALL THE SHOW SCORE SECTION
+  showScoreSection();
+
+  // display the correct score message & adding player name
+  // questionElement.innerHTML = `Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!`;
+  // nextButton.innerHTML = "Play Again";
+  // nextButton.style.display = "block";
+}
+
+// TO SHOW SCORE SECTION
+function showScoreSection() {
+  // Hide intro and quiz sections
+  intro.style.display = "none";
+  quizSection.style.display = "none";
+
+  // Display score section
+  scoreSection.style.display = "block";
+
+  // Display score info
+  scoreInfo.innerHTML = `Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!`;
 }
 
 // new function to incorporate all questions
@@ -267,11 +289,13 @@ nextButton.addEventListener("click", () => {
   if (nextButton.innerHTML === "Next") {
     handleNextButton();
   } else {
+    // Show the score section if "Play Again" button is clicked
+    showScoreSection();
     // Taking user back to the intro page on play again
-    intro.style.display = "block";
-    quizSection.style.display = "none";
-    nameInput.value = ""; // clearing name input
-    startButton.style.display = "block"; // display start button again
+    // intro.style.display = "block";
+    //quizSection.style.display = "none";
+    // nameInput.value = ""; // clearing name input
+    // startButton.style.display = "block"; // display start button again
     // Restart the quiz when the "Play Again" button is clicked
   }
 }); // now only one event listener is targeting the next button meaning both next and play again act correctly
