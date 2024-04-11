@@ -239,25 +239,17 @@ function showScore() {
     (total, set) => total + set.length,
     0
   );
-
   // CALL THE SHOW SCORE SECTION
-  showScoreSection();
-
-  // display the correct score message & adding player name
-  // questionElement.innerHTML = `Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!`;
-  // nextButton.innerHTML = "Play Again";
-  // nextButton.style.display = "block";
+  showScoreSection(totalQuestions);
 }
 
 // TO SHOW SCORE SECTION
-function showScoreSection() {
+function showScoreSection(totalQuestions) {
   // Hide intro and quiz sections
   intro.style.display = "none";
   quizSection.style.display = "none";
-
   // Display score section
   scoreSection.style.display = "block";
-
   // Display score info
   scoreInfo.innerHTML = `${playerName}, you scored ${score} out of ${totalQuestions}!`;
 }
