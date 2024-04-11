@@ -190,6 +190,19 @@ function showQuestion() {
     document.body.className = "flying-dinosaurs";
   }
 
+  // CHANGING COLOR OF THE .APP CLASS FOR EACH Q SET
+  // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
+  if (currentSetIndex === 0) {
+    document.body.className = "land-dinosaurs";
+    document.querySelector(".app").style.backgroundColor = "#90aa82"; // Land dinosaurs color
+  } else if (currentSetIndex === 1) {
+    document.body.className = "ancient-marine-creatures";
+    document.querySelector(".app").style.backgroundColor = "#66a5ad"; // Marine dinosaurs color
+  } else if (currentSetIndex === 2) {
+    document.body.className = "flying-dinosaurs";
+    document.querySelector(".app").style.backgroundColor = "#f0e3d3"; // Air dinosaurs color
+  }
+
   // CREATING BUTTONS FOR ANSWERS
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
