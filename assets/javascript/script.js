@@ -147,6 +147,8 @@ let currentQuestionIndex;
 let score = 0;
 let playerName = ""; // new variable for name
 
+// FUNCTIONS
+
 // adapting startQuiz function to cater for intro page
 function startQuiz() {
   //ensuring name is entered before quiz starts
@@ -288,6 +290,19 @@ function handleNextButton() {
   }
 }
 
+// Reset function to reset the page to its initial state
+function resetPage() {
+  // Reset background image
+  document.body.className = "";
+  // Reset background color of .app
+  document.querySelector(".app").style.backgroundColor = "#90aa82"; // Reset to default color
+  // Hide quiz and score sections
+  quizSection.style.display = "none";
+  scoreSection.style.display = "none";
+  // Show intro section
+  intro.style.display = "flex";
+}
+
 // EVENT LISTENERS
 
 // event listener for start quiz button
@@ -305,9 +320,9 @@ nextButton.addEventListener("click", () => {
 
 // EVENT LISTENER FOR PLAY AGAIN
 playAgainButton.addEventListener("click", () => {
-  // Reset the quiz
-  intro.style.display = "block"; // Show the intro section
-  scoreSection.style.display = "none"; // Hide the score section
+  // Reset the page
+  resetPage();
 });
 
+resetPage();
 startQuiz();
