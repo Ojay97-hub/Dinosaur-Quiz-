@@ -138,8 +138,8 @@ const nextButton = document.getElementById("next-btn");
 const setsOfQuestions = [questions, marineQuestions, airQuestions]; // added
 // SCORE
 const scoreSection = document.getElementById("score-section"); // added
-const scoreInfo = document.getElementById("score-info");
-const playAgainButton = document.getElementById("play-again-btn");
+const scoreInfo = document.getElementById("score-info"); // added
+const playAgainButton = document.getElementById("play-again-btn"); // added
 
 let currentSetIndex = 0;
 let currentQuestions = setsOfQuestions[currentSetIndex]; // added for new question sets
