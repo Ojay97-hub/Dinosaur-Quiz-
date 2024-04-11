@@ -248,8 +248,10 @@ function showScoreSection(totalQuestions) {
   // Hide intro and quiz sections
   intro.style.display = "none";
   quizSection.style.display = "none";
+
   // Display score section
   scoreSection.style.display = "block";
+
   // Display score info
   scoreInfo.innerHTML = `${playerName}, you scored ${score} out of ${totalQuestions}!`;
 }
@@ -272,6 +274,8 @@ function handleNextButton() {
     }
   }
 }
+
+// EVENT LISTENERS
 
 // event listener for start quiz button
 startButton.addEventListener("click", startQuiz);
