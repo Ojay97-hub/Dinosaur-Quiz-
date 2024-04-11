@@ -8,7 +8,9 @@
 }
 /* adding background color */
 body {
-  background-color: #f2f7ef;
+  background-image: url(../images/intro-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
@@ -31,6 +33,10 @@ body.flying-dinosaurs {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#intro ul li {
+  text-align: left;
+  list-style-type: decimal;
 }
 .title {
   text-align: center;

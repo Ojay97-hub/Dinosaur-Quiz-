@@ -176,11 +176,11 @@ function showQuestion() {
 
   // UPDATING THE H1 WHEN DIFFERENT SET QUESTIONS ARE DISPLAYED GRABBING THE H1
   if (currentSetIndex === 0) {
-    document.querySelector("h1").innerText = "LAND DINOSAURS";
+    document.querySelector("h1").innerText = "1) LAND DINOSAURS";
   } else if (currentSetIndex === 1) {
-    document.querySelector("h1").innerText = "ANCIENT MARINE CREATURES";
+    document.querySelector("h1").innerText = "2) ANCIENT MARINE CREATURES";
   } else if (currentSetIndex === 2) {
-    document.querySelector("h1").innerText = "FLYING DINOSAURS";
+    document.querySelector("h1").innerText = "3) FLYING DINOSAURS";
   }
 
   // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
