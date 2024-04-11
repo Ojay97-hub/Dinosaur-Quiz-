@@ -259,7 +259,7 @@ function showScoreSection() {
   scoreSection.style.display = "block";
 
   // Display score info
-  scoreInfo.innerHTML = `Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!`;
+  scoreInfo.innerHTML = `${playerName}, you scored ${score} out of ${totalQuestions}!`;
 }
 
 // new function to incorporate all questions

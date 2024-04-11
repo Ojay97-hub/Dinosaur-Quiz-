@@ -92,6 +92,20 @@ body.flying-dinosaurs {
   cursor: pointer;
   display: none;
 }
+/* new buttons */
+#start-btn,
+#play-again-btn {
+  background: #000000bf;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
 .correct {
   background: #9aeabc;
 }
