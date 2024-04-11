@@ -126,10 +126,10 @@ const airQuestions = [
 ];
 
 // ADDING NEW ID ELEMENTS FOR INTRO
-const intro = document.getElementById("intro");
-const quizSection = document.getElementById("quiz-section");
-const nameInput = document.getElementById("name");
-const startButton = document.getElementById("start-btn");
+const intro = document.getElementById("intro"); // added
+const quizSection = document.getElementById("quiz-section"); // added
+const nameInput = document.getElementById("name"); // added
+const startButton = document.getElementById("start-btn"); // added
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -144,7 +144,7 @@ let playerName = "";
 
 // adapting startQuiz function to cater for intro page
 function startQuiz() {
-  // ensuring name is entered before quiz starts
+  //ensuring name is entered before quiz starts
   playerName = nameInput.value.trim();
   if (playerName === "") {
     alert("Please enter your name before starting the quiz!!!");
@@ -236,21 +236,9 @@ function showScore() {
   );
   // display the correct score message & addug player name
   questionElement.innerHTML = `<h1>End of Quiz</h1><p>Well done, ${playerName}! You scored ${score} out of ${totalQuestions}!</p>`;
-  // questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
-
-// original code
-
-//function handleNextButton() {
-// currentQuestionIndex++;
-//if (currentQuestionIndex < questions.length) {
-// showQuestion();
-// } else {
-//  showScore();
-// }
-// }
 
 // new function to incorporate all questions
 function handleNextButton() {
@@ -271,8 +259,6 @@ function handleNextButton() {
   }
 }
 
-// nextButton.addEventListener("click", handleNextButton); // event listener for next button
-
 // event listener for start quiz button
 startButton.addEventListener("click", startQuiz);
 
@@ -287,18 +273,7 @@ nextButton.addEventListener("click", () => {
     nameInput.value = ""; // clearing name input
     startButton.style.display = "block"; // display start button again
     // Restart the quiz when the "Play Again" button is clicked
-    // startQuiz();
   }
 }); // now only one event listener is targeting the next button meaning both next and play again act correctly
-
-// original code
-
-// () => {
-// if (currentQuestionIndex < questions.length) {
-// handleNextButton();
-// } else {
-// startQuiz();
-// }
-// });
 
 startQuiz();
