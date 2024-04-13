@@ -63,7 +63,7 @@ label {
   background: #90aa82;
   width: 90%;
   max-width: 600px;
-  margin: 100px 30px;
+  margin: 100px auto 0;
   /* adding border */
   border: 2px solid white;
   border-radius: 10px;
