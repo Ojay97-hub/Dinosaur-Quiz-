@@ -10,23 +10,19 @@
 body {
   background-image: url(../images/intro-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
   background-image: url(../images/baby-trex.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 body.ancient-marine-creatures {
   background-image: url(../images/scary-sea-creature.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 body.flying-dinosaurs {
   background-image: url(../images/pterosaurs.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 /* styling the intro/score */
 #intro {
@@ -67,7 +63,7 @@ label {
   background: #90aa82;
   width: 90%;
   max-width: 600px;
-  margin: 100px auto 0;
+  margin: 100px 30px;
   /* adding border */
   border: 2px solid white;
   border-radius: 10px;
