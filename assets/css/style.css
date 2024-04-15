@@ -130,7 +130,8 @@ label {
 }
 /* new buttons */
 #start-btn,
-#play-again-btn {
+#play-again-btn,
+#more-info {
   background: #000000bf;
   color: #fff;
   font-weight: 500;
@@ -141,6 +142,10 @@ label {
   border-radius: 4px;
   cursor: pointer;
   display: block;
+}
+#more-info > a {
+  text-decoration: none;
+  color: #fff;
 }
 .correct {
   background: #9aeabc;

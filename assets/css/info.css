@@ -1,0 +1,53 @@
+/* font */
+@font-face {
+  font-family: dinoTheme;
+  src: url(/assets/font/Dinosaur.ttf) format("truetype");
+}
+
+* {
+  font-family: "dinoTheme", sans-serif;
+  font-weight: 200;
+  color: #e1b504d7;
+}
+/* same background as intro page */
+body {
+  background: url(../images/intro-background.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid #000;
+  padding: 8px;
+  font-family: "dinoTheme", sans-serif;
+}
+th {
+  background-color: #9aeabc;
+}
+/* Styling table headings */
+thead th {
+  background-color: #9aeabc;
+  text-align: left;
+}
+/* Styling table cells */
+tbody td {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.726);
+}
+/* Adding spacing between table cells */
+td,
+th {
+  padding: 10px;
+}
+table {
+  font-size: 16px;
+}
