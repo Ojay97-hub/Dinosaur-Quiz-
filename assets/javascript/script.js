@@ -292,23 +292,25 @@ function resetPage() {
 
 // EVENT LISTENERS
 
-// event listener for start quiz button
-startButton.addEventListener("click", startQuiz);
+function initialization() {
+  // Event listener for start quiz button
+  startButton.addEventListener("click", startQuiz);
 
-// Event listener for the "Next" button
-nextButton.addEventListener("click", () => {
-  if (nextButton.innerHTML === "Next") {
-    handleNextButton();
-  } else {
-    // Show the score section
-    showScoreSection();
-  }
-});
+  // Event listener for the "Next" button
+  nextButton.addEventListener("click", () => {
+    if (nextButton.innerHTML === "Next") {
+      handleNextButton();
+    } else {
+      // Show the score section
+      showScoreSection();
+    }
+  });
 
-// EVENT LISTENER FOR PLAY AGAIN
-playAgainButton.addEventListener("click", () => {
-  // Reset the page
-  resetPage();
-});
+  // Event listener for play again button
+  playAgainButton.addEventListener("click", () => {
+    // Reset the page
+    resetPage();
+  });
+}
 
-resetPage();
+initialization();
