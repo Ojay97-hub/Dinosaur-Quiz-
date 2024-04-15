@@ -7,7 +7,7 @@
 * {
   font-family: "dinoTheme", sans-serif;
   font-weight: 200;
-  color: #e1b504d7;
+  color: black;
 }
 /* same background as intro page */
 body {
@@ -31,11 +31,11 @@ td {
   font-family: "dinoTheme", sans-serif;
 }
 th {
-  background-color: #9aeabc;
+  background-color: #e1b504d7;
 }
 /* Styling table headings */
 thead th {
-  background-color: #9aeabc;
+  background-color: #e1b504d7;
   text-align: left;
 }
 /* Styling table cells */
@@ -50,4 +50,17 @@ th {
 }
 table {
   font-size: 16px;
+}
+/* button */
+#play-again-btn {
+  background: #000000bf;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
 }
