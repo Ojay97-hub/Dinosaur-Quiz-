@@ -4,16 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 ERROR</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      body {
+        background: #36637b;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 800;
+      }
+      .app {
+        background: #e1b504d7;
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .app h2 {
+        font-size: 25px;
+        color: #000;
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      #btn {
+        background: #000000bf;
+        color: #fff;
+        font-weight: 500;
+        width: 150px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
     <main class="app">
-      <h2 class="title">404 ERROR!</h2>
+      <h2>404 ERROR!</h2>
       <p>
         It appears you have not reached the dinosaur quiz site due to an error!
         Please click the button below to return to the main site.
       </p>
-      <button id="return-btn">Go To Website!</button>
+      <button id="btn">
+        <a href="https://ojay97-hub.github.io/Dinosaur-Quiz-/" target="_blank"
+          >Go To Website!</a
+        >
+      </button>
     </main>
   </body>
 </html>
