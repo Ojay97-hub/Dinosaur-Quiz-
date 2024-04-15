@@ -14,19 +14,23 @@
 body {
   background-image: url(../images/intro-background.jpg);
   background-repeat: no-repeat;
+  background-size: 200vh;
 }
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
   background-image: url(../images/baby-trex.jpeg);
   background-repeat: no-repeat;
+  background-size: 200vh;
 }
 body.ancient-marine-creatures {
   background-image: url(../images/scary-sea-creature.jpeg);
   background-repeat: no-repeat;
+  background-size: 200vh;
 }
 body.flying-dinosaurs {
   background-image: url(../images/pterosaurs.jpeg);
   background-repeat: no-repeat;
+  background-size: 200vh;
 }
 /* styling the intro/score */
 #intro {
