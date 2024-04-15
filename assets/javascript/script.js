@@ -180,15 +180,15 @@ function showQuestion() {
   // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
   if (currentSetIndex === 0) {
     document.body.className = "land-dinosaurs";
-    document.querySelector(".app").style.backgroundColor = "#90aa82";
+    document.querySelector(".app").style.backgroundColor = "#90aa82b4";
     document.querySelector("h1").innerText = "1) LAND DINOSAURS";
   } else if (currentSetIndex === 1) {
     document.body.className = "ancient-marine-creatures";
-    document.querySelector(".app").style.backgroundColor = "#66a5ad";
+    document.querySelector(".app").style.backgroundColor = "#66a5adb4";
     document.querySelector("h1").innerText = "2) ANCIENT MARINE CREATURES";
   } else if (currentSetIndex === 2) {
     document.body.className = "flying-dinosaurs";
-    document.querySelector(".app").style.backgroundColor = "#f0e3d3";
+    document.querySelector(".app").style.backgroundColor = "#f0e3d3b4";
     document.querySelector("h1").innerText = "3) FLYING DINOSAURS";
   }
 
@@ -282,7 +282,7 @@ function resetPage() {
   // Reset background image
   document.body.className = "";
   // Reset background color of .app
-  document.querySelector(".app").style.backgroundColor = "#90aa82"; // Reset to default color
+  document.querySelector(".app").style.backgroundColor = "#e1b404"; // Reset to default color
   // Hide quiz and score sections
   quizSection.style.display = "none";
   scoreSection.style.display = "none";

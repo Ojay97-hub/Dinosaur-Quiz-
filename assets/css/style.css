@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"); */
+
+@font-face {
+  font-family: dinoTheme;
+  src: url(../font/Dinosaur.ttf) format("truetype");
+}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "dinoTheme", sans-serif;
+  color: #010002;
   box-sizing: border-box;
 }
 /* adding background color */
@@ -61,7 +67,7 @@ label {
   justify-content: center;
 }
 .app {
-  background: #90aa82;
+  background: #e1b404;
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
