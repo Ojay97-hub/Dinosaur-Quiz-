@@ -175,34 +175,21 @@ function showQuestion() {
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
   // UPDATING THE H1 WHEN DIFFERENT SET QUESTIONS ARE DISPLAYED GRABBING THE H1
-  if (currentSetIndex === 0) {
-    document.querySelector("h1").innerText = "1) LAND DINOSAURS";
-  } else if (currentSetIndex === 1) {
-    document.querySelector("h1").innerText = "2) ANCIENT MARINE CREATURES";
-  } else if (currentSetIndex === 2) {
-    document.querySelector("h1").innerText = "3) FLYING DINOSAURS";
-  }
-
-  // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
-  if (currentSetIndex === 0) {
-    document.body.className = "land-dinosaurs";
-  } else if (currentSetIndex === 1) {
-    document.body.className = "ancient-marine-creatures";
-  } else if (currentSetIndex === 2) {
-    document.body.className = "flying-dinosaurs";
-  }
-
   // CHANGING COLOR OF THE .APP CLASS FOR EACH Q SET
   // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
+  // ADDING DINOSAUR BACKGROUNDS FOR EACH QUESTION SET USING CLASSES
   if (currentSetIndex === 0) {
     document.body.className = "land-dinosaurs";
-    document.querySelector(".app").style.backgroundColor = "#90aa82"; // Land dinosaurs color
+    document.querySelector(".app").style.backgroundColor = "#90aa82";
+    document.querySelector("h1").innerText = "1) LAND DINOSAURS";
   } else if (currentSetIndex === 1) {
     document.body.className = "ancient-marine-creatures";
-    document.querySelector(".app").style.backgroundColor = "#66a5ad"; // Marine dinosaurs color
+    document.querySelector(".app").style.backgroundColor = "#66a5ad";
+    document.querySelector("h1").innerText = "2) ANCIENT MARINE CREATURES";
   } else if (currentSetIndex === 2) {
     document.body.className = "flying-dinosaurs";
-    document.querySelector(".app").style.backgroundColor = "#f0e3d3"; // Air dinosaurs color
+    document.querySelector(".app").style.backgroundColor = "#f0e3d3";
+    document.querySelector("h1").innerText = "3) FLYING DINOSAURS";
   }
 
   // CREATING BUTTONS FOR ANSWERS
