@@ -156,4 +156,9 @@ label {
     margin-bottom: 80px;
     font-size: 14px;
   }
+
+  /* name input less wide */
+  #name {
+    width: 90%;
+  }
 }
