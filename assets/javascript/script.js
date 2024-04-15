@@ -1,7 +1,6 @@
-// THIS IS CODE FROM GREATSTACK SIMPLE QUIZ VIDEO
+// CODE HAS BEEN TAKEN FROM GREATSTACK SIMPLE QUIZ VIDEO
 
-// AN OBJECT OF MULTIPLE CHOICE QUESTIONS, A STRING AND AN ARRAY OF POSSIBLE ANSWERS (object with 2 properties text and correct)
-
+/** AN OBJECT OF MULTIPLE CHOICE QUESTIONS, A STRING AND AN ARRAY OF POSSIBLE ANSWERS (object with 2 properties text and correct) */
 // LAND BASED QUESTIONS
 const questions = [
   {
@@ -150,6 +149,12 @@ let playerName = ""; // new variable for name
 // FUNCTIONS
 
 // adapting startQuiz function to cater for intro page
+/**
+ * Starts the quiz when the start button is clicked after ensuring a name is entered.
+ * Hides the intro section and displays the quiz section.
+ * Resets quiz variables like current question set index, current question index, and score.
+ * Shows the first question of the selected question set.
+ */
 function startQuiz() {
   //ensuring name is entered before quiz starts
   playerName = nameInput.value.trim();
@@ -168,6 +173,11 @@ function startQuiz() {
   showQuestion();
 }
 
+/**
+ * Displays the current question along with answer options.
+ * Updates the background color and title based on the current question set.
+ * Creates buttons for each answer option and attaches event listeners to them.
+ */
 function showQuestion() {
   resetState();
   let currentQuestion = currentQuestions[currentQuestionIndex];
@@ -205,7 +215,10 @@ function showQuestion() {
   });
 }
 
-// REMOVING ANSWER 1/2/3/4 FROM HTML
+/**
+ * Resets the state of the quiz by removing previously displayed answers.
+ * REMOVING ANSWER 1/2/3/4 FROM HTML
+ */
 function resetState() {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -213,7 +226,11 @@ function resetState() {
   }
 }
 
-// SELECTING ANSWER & CHANGING COLOUR IF RIGHT/WRONG & BLOCKING CLICK ON SELECTION
+/**
+ * Handles the selection of an answer option.
+ * Updates score if the selected answer is correct and disables further clicks on answer buttons.
+ * SELECTING ANSWER & CHANGING COLOUR IF RIGHT/WRONG & BLOCKING CLICK ON SELECTION
+ */
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -232,7 +249,11 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
-// this score function now shows out of 12 rather than original
+/**
+ * Calculates and displays the final score out of the total number of questions.
+ * Hides the intro and quiz sections and displays the score section.
+ * this score function now shows out of 12 rather than original 4
+ */
 function showScore() {
   // reset the state of the quiz
   resetState();
@@ -245,7 +266,10 @@ function showScore() {
   showScoreSection(totalQuestions);
 }
 
-// TO SHOW SCORE SECTION
+/**
+ * Displays the score section with the player's name and final score.
+ * TO SHOW SCORE SECTION
+ */
 function showScoreSection(totalQuestions) {
   // Hide intro and quiz sections
   intro.style.display = "none";
@@ -258,7 +282,12 @@ function showScoreSection(totalQuestions) {
   scoreInfo.innerHTML = `${playerName}, you scored ${score} out of ${totalQuestions}!`;
 }
 
-// new function to incorporate all questions
+/**
+ * Handles the functionality when the "Next" button is clicked.
+ * Proceeds to the next question or question set based on the current state of the quiz.
+ * Displays the score section if all question sets are completed.
+ * new function to incorporate all question categories rather than original
+ */
 function handleNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < currentQuestions.length) {
@@ -277,7 +306,11 @@ function handleNextButton() {
   }
 }
 
-// Reset function to reset the page to its initial state
+/**
+ * Resets the page to its initial state by hiding quiz and score sections and showing the intro section.
+ * Resets background image and color.
+ * Reset function to reset the page to its initial state
+ */
 function resetPage() {
   // Reset background image
   document.body.className = "";
@@ -292,6 +325,9 @@ function resetPage() {
 
 // EVENT LISTENERS
 
+/**
+ * Initializes event listeners for various buttons and elements when the DOM content is loaded.
+ */
 function initialization() {
   // Event listener for start quiz button
   startButton.addEventListener("click", startQuiz);
@@ -313,7 +349,7 @@ function initialization() {
   });
 }
 
-// INITIALIZATION IS CALLED AFTER DOMCONTENTLOADED
+/** INITIALIZATION IS CALLED AFTER DOMCONTENTLOADED */
 document.addEventListener("DOMContentLoaded", function () {
   initialization();
 });
