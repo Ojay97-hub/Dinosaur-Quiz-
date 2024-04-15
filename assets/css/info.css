@@ -70,5 +70,7 @@ table {
   margin: 20px auto 0;
   border-radius: 4px;
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
