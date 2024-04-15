@@ -312,4 +312,3 @@ playAgainButton.addEventListener("click", () => {
 });
 
 resetPage();
-startQuiz();
