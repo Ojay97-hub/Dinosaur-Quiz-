@@ -17,6 +17,7 @@ body {
 h1 {
   text-align: center;
   text-decoration: underline;
+  color: white;
 }
 /* Table styling */
 table {
@@ -36,11 +37,13 @@ th {
 /* Styling table headings */
 thead th {
   background-color: #e1b504d7;
-  text-align: left;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 24px;
 }
 /* Styling table cells */
 tbody td {
-  text-align: left;
+  text-align: center;
   background: rgba(255, 255, 255, 0.726);
 }
 /* Adding spacing between table cells */
