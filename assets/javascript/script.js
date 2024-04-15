@@ -313,4 +313,7 @@ function initialization() {
   });
 }
 
-initialization();
+// INITIALIZATION IS CALLED AFTER DOMCONTENTLOADED
+document.addEventListener("DOMContentLoaded", function () {
+  initialization();
+});
