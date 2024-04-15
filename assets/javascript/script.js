@@ -75,7 +75,7 @@ const marineQuestions = [
   {
     question: "Which sea creature is the longest that ever existed?",
     answers: [
-      { text: "Man O war jellyfish", correct: true },
+      { text: "Portuguese Man O' war jellyfish", correct: true },
       { text: "Shonisaurus sikanniensis", correct: false },
       { text: "Blue Whale", correct: false },
       { text: "Giant squid", correct: false },
