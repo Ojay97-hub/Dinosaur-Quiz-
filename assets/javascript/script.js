@@ -124,7 +124,7 @@ const airQuestions = [
   },
 ];
 
-// ADDING NEW ID ELEMENTS FOR INTRO
+// ADDING NEW ID ELEMENTS
 // INTRO
 const intro = document.getElementById("intro"); // added
 const nameInput = document.getElementById("name"); // added

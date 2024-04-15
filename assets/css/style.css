@@ -12,25 +12,19 @@
 }
 /* adding background color */
 body {
-  background-image: url(../images/intro-background.jpg);
-  background-repeat: no-repeat;
-  background-size: 200vh;
+  background: url(../images/intro-background.jpg) no-repeat center center/cover;
+  min-height: 100vh;
 }
 /* ADDING DINOSAUR BACKGROUNDS */
 body.land-dinosaurs {
-  background-image: url(../images/baby-trex.jpeg);
-  background-repeat: no-repeat;
-  background-size: 200vh;
+  background: url(../images/baby-trex.jpeg) no-repeat center center/cover;
 }
 body.ancient-marine-creatures {
-  background-image: url(../images/scary-sea-creature.jpeg);
-  background-repeat: no-repeat;
-  background-size: 200vh;
+  background: url(../images/scary-sea-creature.jpeg) no-repeat center
+    center/cover;
 }
 body.flying-dinosaurs {
-  background-image: url(../images/pterosaurs.jpeg);
-  background-repeat: no-repeat;
-  background-size: 200vh;
+  background: url(../images/pterosaurs.jpeg) no-repeat center center/cover;
 }
 /* styling the intro/score */
 #intro {
@@ -153,4 +147,13 @@ label {
 }
 .incorrect {
   background: #ff9393;
+}
+
+/* added a media query for galaxy fold */
+@media screen and (max-width: 280px) {
+  body {
+    /* margin-bottom as app container was too close to end of screen */
+    margin-bottom: 80px;
+    font-size: 14px;
+  }
 }
