@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
     <title>Dinosaur Quiz</title>
@@ -19,9 +20,9 @@
       <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="app">
+    <main class="app">
       <!-- ADDING AN INTRO BEFORE QUIZ -->
-      <div id="intro">
+      <section id="intro">
         <h2 class="title">WELCOME TO THE DINO QUIZ!</h2>
         <p>
           This is the most awesome dinosaur quiz ever! 
@@ -40,9 +41,9 @@
         <input type="text" id="name" placeholder="Your name" />
         <button id="start-btn">Start Quiz!</button>
         <p>GOOD LUCK!</p>
-      </div>
+      </section>
       <!-- THE QUIZ -->
-      <div id="quiz-section">
+      <section id="quiz-section">
         <h1>Title of set question goes here</h1>
         <div class="quiz">
           <h2 id="question">Question goes here</h2>
@@ -54,15 +55,15 @@
           </div>
           <button id="next-btn">Next</button>
         </div>
-      </div>
+      </section>
       <!-- SCORE SECTION -->
-      <div id="score-section">
+      <section id="score-section">
         <h2 class="title">END OF QUIZ</h2>
         <p>Well done for completing the quiz! please find your score below:</p>
         <div id="score-info"></div>
         <button id="play-again-btn">Play Again!</button>
-      </div>
-    </div>
+      </section>
+    </main>
     <script src="assets/javascript/script.js"></script>
   </body>
 </html>
