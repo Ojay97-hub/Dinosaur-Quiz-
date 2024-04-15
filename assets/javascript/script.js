@@ -282,7 +282,7 @@ function resetPage() {
   // Reset background image
   document.body.className = "";
   // Reset background color of .app
-  document.querySelector(".app").style.backgroundColor = "#e1b404"; // Reset to default color
+  document.querySelector(".app").style.backgroundColor = "#e1b404d7"; // Reset to default color
   // Hide quiz and score sections
   quizSection.style.display = "none";
   scoreSection.style.display = "none";
