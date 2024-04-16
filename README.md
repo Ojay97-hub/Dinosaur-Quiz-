@@ -34,6 +34,12 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 ### VALIDATING
 
+#### JAVASCRIPT
+
+#### HTML
+
+#### CSS
+
 ### FUNCTIONALITY
 
 Using the catch & error, debugger, and console.log methods the following functions have been tested and results are as follows:
@@ -50,6 +56,10 @@ Using the catch & error, debugger, and console.log methods the following functio
 4. clickable play again button on info page covering width of screen _need to fix_.
 
 ## ACCESSIBILITY
+
+### WAVE
+
+### LIGHTHOUSE
 
 ## DEPLOYMENT
 
