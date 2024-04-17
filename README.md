@@ -53,9 +53,9 @@ Using the catch & error, debugger, and console.log methods the following functio
 ## BUGS
 
 1. background images not covering entire background
-2. Adding end of quiz section remained on previous quiz section - made use of the display method.
-3. alert was showing prematurely
-4. clickable play again button on info page covering width of screen _need to fix_.
+2. Adding end of quiz section remained on previous quiz section - made use of the display none/block method.
+3. alert was showing prematurely - deleted startquiz call outside of functions
+4. clickable play again button on info page covering width of screen - fixed by using script instead of an a-tag.
 5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions.
 
 ## ACCESSIBILITY

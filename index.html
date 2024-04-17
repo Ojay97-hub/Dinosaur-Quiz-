@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
   <head>
     <title>Dinosaur Quiz</title>
-   
-  <!-- META -->
-   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Website for a basic dinosaur quiz" />
     <meta name="keywords" content="Dinosaur, quiz, multiple choice, easy" />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"> 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
-    
     <!-- stylesheet -->
-      <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <main class="app">
       <!-- ADDING AN INTRO BEFORE QUIZ -->
       <section id="intro">
         <h2 class="title">WELCOME TO THE DINO QUIZ!</h2>
-        <p>
-          This is the most awesome dinosaur quiz ever! 
-          <hr>
-          There are 3 categories
-          consisting of: 
-          <ul>
+        <p>This is the most awesome dinosaur quiz ever!</p>
+        <hr />
+        There are 3 categories consisting of:
+        <ul>
           <li>Land</li>
           <li>Sea</li>
           <li>Air</li>
-          </ul>
-          based multiple choice questions with
-          4 answers to select from. 
-        </p>
+        </ul>
+        based multiple choice questions with 4 answers to select from.
         <label for="name">Enter your name:</label>
         <input type="text" id="name" placeholder="Your name" />
         <button id="start-btn">Start Quiz!</button>
@@ -64,8 +72,11 @@
         <p>Well done for completing the quiz! please find your score below:</p>
         <div id="score-info"></div>
         <button id="play-again-btn">Play Again!</button>
-        <p>If you want to see explanations for each answer click the correct answer info button below!</p> 
-        <button id="more-info"><a href="info.html">Answer Info!</a></button>
+        <p>
+          If you want to see explanations for each answer click the correct
+          answer info button below!
+        </p>
+        <button id="more-info">Answer Info!</button>
       </section>
     </main>
     <script src="assets/javascript/script.js"></script>

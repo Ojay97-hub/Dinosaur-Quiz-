@@ -385,6 +385,12 @@ function initialization() {
     // Reset the page
     resetPage();
   });
+
+  // Event listener for the "More Info" button
+  const moreInfoButton = document.getElementById("more-info");
+  moreInfoButton.addEventListener("click", () => {
+    window.location.href = "info.html";
+  });
 }
 
 /** INITIALIZATION IS CALLED AFTER DOMCONTENTLOADED */
