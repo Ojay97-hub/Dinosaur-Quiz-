@@ -176,7 +176,12 @@ function startQuiz() {
   showQuestion();
 }
 
-/** STARTS THE TIMER */
+/** STARTS THE TIMER
+ * STOPS ON NEXT BUTTON
+ * TICKS ON EVERY SECOND
+ * DISPLAYS TIME WITH INNERTEXT
+ * TIME LIMIT SET TO 20 SECS
+ */
 function startTimer() {
   let timeLeft = timeLimit;
 
@@ -284,7 +289,7 @@ function selectAnswer(e) {
     button.disabled = true;
   });
   nextButton.style.display = "block";
-  stopTimer();
+  stopTimer(); // TIMER STOPS WHEN ANSWER IS SELECTED
 }
 
 /**
