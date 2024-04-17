@@ -6,7 +6,7 @@ The quiz consists of 3 main categories of land, sea, and air based dinosaur rela
 
 ## SCREENSHOTS
 
-![screenshots of website](/assets/readme/responsive-screenshots.jpg)
+![screenshots of website](/assets/readme/responsive-screenshots2.jpg)
 
 ## DEFENSIVE USER EXPERIENCE
 
@@ -20,13 +20,30 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 #### INSTRUCTIONS
 
+![screenshots of instructions](/assets/readme/instructions.jpg)
+
 #### ALERT
+
+![screenshots of alert](/assets/readme/alert.jpg)
 
 #### ANSWER FEEDBACK
 
+![screenshots of feedback](/assets/readme/answer-feedback.jpg)
+![screenshots of feedback](/assets/readme/incorrect-answer-feedback.jpg)
+
+#### TIMER
+
+![screenshots of timer](/assets/readme/timer.jpg)
+
 #### SCORE REVEAL
 
+![screenshots of score reveal](/assets/readme/score-reveal.jpg)
+
 #### EXPLANATIONS
+
+![screenshots of explanations](/assets/readme/explanation-options.jpg)
+![screenshots of explanations](/assets/readme/answers.jpg)
+![screenshots of explanations](/assets/readme/play-again-answers.jpg)
 
 #### 404 PAGE
 
@@ -35,6 +52,9 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 ## TESTING
 
 ### VALIDATING
+
+- All HTML and CSS has been fully validated by W3C and W3Jigsaw - only issue is the forward slash but this is due to using prettier extension.
+- JAVASCRIPT is 100% validated using site24x7. Just states what syntax is available in each version of javascript.
 
 #### JAVASCRIPT
 
