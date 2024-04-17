@@ -145,6 +145,9 @@ let currentQuestions = setsOfQuestions[currentSetIndex]; // added for new questi
 let currentQuestionIndex;
 let score = 0;
 let playerName = ""; // new variable for name
+// TIMER - addition
+let timerInterval;
+let timeLimit = 20; // Time limit for each question in seconds
 
 // FUNCTIONS
 
@@ -173,6 +176,34 @@ function startQuiz() {
   showQuestion();
 }
 
+/** STARTS THE TIMER */
+function startTimer() {
+  let timeLeft = timeLimit;
+
+  // Update the timer display every second
+  timerInterval = setInterval(() => {
+    // Display the remaining time
+    document.getElementById("timer-display").innerText = timeLeft;
+
+    // Decrease time left
+    timeLeft--;
+
+    // Check if time is up
+    if (timeLeft < 0) {
+      // Stop the timer
+      clearInterval(timerInterval);
+
+      // Automatically move to the next question or handle time's up logic
+      handleNextButton(); // Assuming this function moves to the next question
+    }
+  }, 1000); // Update timer every second
+}
+
+/** STOPS THE TIMER */
+function stopTimer() {
+  clearInterval(timerInterval); // Stop the timer
+}
+
 /**
  * Displays the current question along with answer options.
  * Updates the background color and title based on the current question set.
@@ -183,6 +214,12 @@ function showQuestion() {
   let currentQuestion = currentQuestions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+  // Reset timer display
+  document.getElementById("timer-display").innerText = timeLimit;
+
+  // Start the timer
+  startTimer();
 
   // UPDATING THE H1 WHEN DIFFERENT SET QUESTIONS ARE DISPLAYED GRABBING THE H1
   // CHANGING COLOR OF THE .APP CLASS FOR EACH Q SET
@@ -247,6 +284,7 @@ function selectAnswer(e) {
     button.disabled = true;
   });
   nextButton.style.display = "block";
+  stopTimer();
 }
 
 /**
