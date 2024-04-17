@@ -148,6 +148,15 @@ let playerName = ""; // new variable for name
 
 // FUNCTIONS
 
+// Function to shuffle an array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 // adapting startQuiz function to cater for intro page
 /**
  * Starts the quiz when the start button is clicked after ensuring a name is entered.
@@ -162,6 +171,10 @@ function startQuiz() {
     alert("Please enter your name before starting the quiz!!!");
     return;
   }
+
+  // Shuffle the setsOfQuestions array before assigning the current question set
+  shuffleArray(setsOfQuestions);
+
   // Hiding intro and showing quiz with display none and block
   intro.style.display = "none";
   quizSection.style.display = "block";
@@ -191,15 +204,15 @@ function showQuestion() {
   if (currentSetIndex === 0) {
     document.body.className = "land-dinosaurs";
     document.querySelector(".app").style.backgroundColor = "#90aa82b4";
-    document.querySelector("h1").innerText = "1) LAND DINOSAURS";
+    document.querySelector("h1").innerText = "LAND DINOSAURS";
   } else if (currentSetIndex === 1) {
     document.body.className = "ancient-marine-creatures";
     document.querySelector(".app").style.backgroundColor = "#66a5adb4";
-    document.querySelector("h1").innerText = "2) ANCIENT MARINE CREATURES";
+    document.querySelector("h1").innerText = "ANCIENT MARINE CREATURES";
   } else if (currentSetIndex === 2) {
     document.body.className = "flying-dinosaurs";
     document.querySelector(".app").style.backgroundColor = "#f0e3d3b4";
-    document.querySelector("h1").innerText = "3) FLYING DINOSAURS";
+    document.querySelector("h1").innerText = "FLYING DINOSAURS";
   }
 
   // CREATING BUTTONS FOR ANSWERS
