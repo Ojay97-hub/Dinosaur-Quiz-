@@ -1,6 +1,6 @@
 # DINOSAUR QUIZ
 
-This is a simple dinosaur quiz that showcases the application of javascript, html, and css. It is an adaptation of a youtube tutorial by GreatStack who demonstrated how to create the starting blocks of a quiz. I have used this a starting point but then expanded upon to create what see you below in the screenshots.
+This is a simple dinosaur quiz that showcases the application of javascript, html, and css. It is an adaptation of a youtube tutorial by GreatStack who demonstrated how to create the starting blocks of a quiz, which I have used but then expanded upon to create what see you below in the screenshots.
 
 The quiz consists of 3 main categories of land, sea, and air based dinosaur related questions where the user firstly inputs their name, presses start quiz to then enjoy answering the 12 questions, which have 4 multiple choice answers. At completion the quiz says well done "x" you have scored "x" out of 12. They are then offered to play again or go to more info, which will take them to a quiz answers and explanation page, that features a play again button to direct them back to the beginning.
 
@@ -30,6 +30,8 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 #### 404 PAGE
 
+![screenshots of error page](/assets/readme/dinosaur-error-page.jpg)
+
 ## TESTING
 
 ### VALIDATING
@@ -54,12 +56,19 @@ Using the catch & error, debugger, and console.log methods the following functio
 2. Adding end of quiz section remained on previous quiz section - made use of the display method.
 3. alert was showing prematurely
 4. clickable play again button on info page covering width of screen _need to fix_.
+5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions.
 
 ## ACCESSIBILITY
 
 ### WAVE
 
+![screenshot of wave](/assets/readme/wave-all-good.jpg)
+Wave showing the all clear for no errors.
+
 ### LIGHTHOUSE
+
+![screenshot of lighthouse](/assets/readme/lighthouse-greenlight.jpg)
+Lighthouse showing the all clear for all categories.
 
 ## DEPLOYMENT
 
@@ -76,10 +85,11 @@ The site was deployed onto github pages:
 
 ## FUTURE FEATURES
 
+- ADD A SET OF QUIZ CATEGORIES e.g.: create a menu where user can pick from a list of topics.
 - ADD BACKGROUND MUSIC
 - ADD LEADERBOARD FOR COMPETITION
-- ADD A SET OF QUIZ CATEGORIES
 - RANDOMIZATION OF THE ORDER OF EACH QUIZ QUESTION/CATEGORY
+- TIMER TO CREATE SENSE OF URGENCY
 
 ## CREDIT
 
