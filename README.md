@@ -130,7 +130,7 @@ The site was deployed onto github pages:
 5. Retrieve the page link under github pages header.
 6. Back on the repo page you can head to deployments.
 7. The link should display under github-pages deployments.
-8. The website was deployed on github and can be accessed here:
+8. The website was deployed on github and can be accessed here: https://ojay97-hub.github.io/Dinosaur-Quiz-/
 
 ## FUTURE FEATURES
 
