@@ -8,6 +8,16 @@ The quiz consists of 3 main categories of land, sea, and air based dinosaur rela
 
 ![screenshots of website](/assets/readme/responsive-screenshots2.jpg)
 
+## USER STORIES
+
+### EDUCATOR
+
+- As an educator I would want to use this...
+
+### STUDENT
+
+- As a student...
+
 ## DEFENSIVE USER EXPERIENCE
 
 This project set out to build an interactive front-end site that responds to users' actions, to allow them to actively engage with data, and alter the way the site displays the information to achieve their preferred goals. Whilst reducing human error as much as possible and providing a smooth ride throughout the course of the interaction.
@@ -105,7 +115,10 @@ Using the catch & error, debugger, and console.log methods the following functio
 2. Adding score section remained on quiz section - made use of the display none/block method.
 3. alert was showing prematurely - deleted startquiz call outside of functions
 4. clickable play again button on info page covering width of screen - fixed by using script instead of an a-tag.
-5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions.
+
+### Unfixed Bugs
+5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions - not resolved/abandoned.
+6. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved. 
 
 ## ACCESSIBILITY
 
