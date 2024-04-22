@@ -54,7 +54,7 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 ### VALIDATING
 
 - All HTML and CSS has been fully validated by W3C and W3Jigsaw - only issue is the forward slash but this is due to using prettier extension.
-- JAVASCRIPT is 100% validated using site24x7. Just states what syntax is available in each version of javascript.
+- JAVASCRIPT is 100% validated using JShint. Just states what syntax is available in each version of javascript.
 
 #### JAVASCRIPT
 
@@ -66,9 +66,19 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 Using the catch & error, debugger, and console.log methods the following functions have been tested and results are as follows:
 
-| FUNCTION | ITEM | RESULT |
-| -------- | ---- | ------ |
-| x        | y    | z      |
+| KEY FUNCTIONS                    | DESCRIPTOR                                                                                                                                       | RESULT |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| startQuiz()                      | When start button is clicked and the name is filled in = intro section is hidden and quiz section is displaying first Q.                         | PASS   |
+| startTimer()                     | Starts a timer that runs for 20 seconds and shows remaining time to user for each Q.                                                             | PASS   |
+| stopTimer()                      | Stop timer interval.                                                                                                                             | PASS   |
+| showQuestion()                   | Displays the current question whilst updating styling for each category ensuring answer buttons are available for the user to press.             | PASS   |
+| resetState()                     | resets the state of the quiz by removing previously stated answers.                                                                              | PASS   |
+| selectAnswer(e)                  | Handles selection of an answer option. Updates score if selected answer is correct, changes colour of button depending on correct/incorrect.     | PASS   |
+| showScore()                      | Does the calculation for the score                                                                                                               | PASS   |
+| showScoreSection(totalQuestions) | Displays final score out of the total number of questions that applies the username. Hides intro & quiz sections and displays the score section. | PASS   |
+| handleNextButton()               | Ensures next set of questions are displaying when answered. If all questions are complete it shows score section.                                | PASS   |
+| resetPage()                      | completing resets the quiz to ensure the quiz can be played again.                                                                               | PASS   |
+| initialization()                 | Wraps all of the event listeners to ensure they are loaded in when the DOM content is loaded - focussing on buttons.                             | PASS   |
 
 ## BUGS
 
@@ -105,7 +115,7 @@ The site was deployed onto github pages:
 
 ## FUTURE FEATURES
 
-- ADD A SET OF QUIZ CATEGORIES e.g.: create a menu where user can pick from a list of topics.
+- ADD A SET OF QUIZ CATEGORIES i.e., create a menu where user can pick from a list of topics.
 - ADD BACKGROUND MUSIC
 - ADD LEADERBOARD FOR COMPETITION
 - RANDOMIZATION OF THE ORDER OF EACH QUIZ QUESTION/CATEGORY
