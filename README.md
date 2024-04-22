@@ -28,7 +28,7 @@ This project set out to build an interactive front-end site that responds to use
 
 Given the simplicity and "easy-to-use" design. The quiz can be used as a fun educational tool for young children who may be studying prehistoric topics at school. Gamifying education is always beneficial for learning in a few ways 1. keeps engagement levels high 2. the scoring feature will entice children to improve upon their previous score 3. the score may also induce a competitive nature between their fellow friends and students.
 
-### KEY DEFENSIVE MEASURES
+### KEY DEFENSIVE MEASURES - STATE CONNECTIONS BETWEEN CODE AND DESIGN WHERE POSSIBLE
 
 #### INSTRUCTIONS
 
