@@ -8,6 +8,8 @@ The quiz consists of 3 main categories of land, sea, and air based dinosaur rela
 
 ![screenshots of website](/assets/readme/responsive-screenshots2.jpg)
 
+## WIREFRAMES
+
 ## USER STORIES
 
 ### EDUCATOR
@@ -75,6 +77,14 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 ## TESTING
 
+### RESPONSIVENESS
+
+#### MOBILE
+
+#### TABLET
+
+#### DESKTOP
+
 ### VALIDATING
 
 Validating the code to ensure it passes with best practices maintained throughout.
@@ -117,8 +127,9 @@ Using the catch & error, debugger, and console.log methods the following functio
 4. clickable play again button on info page covering width of screen - fixed by using script instead of an a-tag.
 
 ### Unfixed Bugs
+
 5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions - not resolved/abandoned.
-6. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved. 
+6. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved.
 
 ## ACCESSIBILITY
 
@@ -147,11 +158,10 @@ The site was deployed onto github pages:
 
 ## FUTURE FEATURES
 
-- ADD A SET OF QUIZ CATEGORIES i.e., create a menu where user can pick from a list of topics.
-- ADD BACKGROUND MUSIC
-- ADD LEADERBOARD FOR COMPETITION
-- RANDOMIZATION OF THE ORDER OF EACH QUIZ QUESTION/CATEGORY
-- INCREASE TIMER SPEED FOR DIFFICULTY LEVELS
+- Add a set of quiz categories i.e., create a menu where user can pick from a list of topics.
+- Add background music.
+- Add a leaderboard for competition.
+- Randomization of the order of each quiz/question category - Increase timer speed for difficulty levels
 
 ## CREDIT
 
