@@ -145,6 +145,7 @@ The site was deployed onto github pages:
 - GREATSTACK: https://www.youtube.com/watch?v=PBcqGxrr9g8 - base code that was expanded upon.
 - DAFONT for dinosaur themed font
 - PIXABAY for images
+- Asked chatGPT for solutions to bugs and areas of improvement i.e., the play again button was taking up width of info.html screen.
 
 ### References:
 
