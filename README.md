@@ -22,22 +22,32 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 ![screenshots of instructions](/assets/readme/instructions.jpg)
 
+- Clear and simple instructions that outlines the whole point/purpose of the quiz - provides landing/intro page rather than just entering the quiz section.
+
 #### ALERT
 
 ![screenshots of alert](/assets/readme/alert.jpg)
+
+- The alert ensures the user inputs their name prior to starting the quiz. This is clear application of a defensive user measure
 
 #### ANSWER FEEDBACK
 
 ![screenshots of feedback](/assets/readme/answer-feedback.jpg)
 ![screenshots of feedback](/assets/readme/incorrect-answer-feedback.jpg)
 
+- Green for correct and red for incorrect helps the user to understand that 1. they are having feedback when they select answer 2. That they then cannot change their selected answer. This ensures that there is smooth transitioning/good & efficient flow throughout the quiz.
+
 #### TIMER
 
 ![screenshots of timer](/assets/readme/timer.jpg)
 
+- A timer is displayed to force the user to think of a question within a timely manner, which should encourage quiz engagement rather than just staying on one question for a prolonged period of time. This prevents the adverse event of the user exiting the application/quiz and promotes completion.
+
 #### SCORE REVEAL
 
 ![screenshots of score reveal](/assets/readme/score-reveal.jpg)
+
+- Once the user has completed the quiz they will be greeted with a personalized message that starts with a congratulations! Followed by their name that they entered at the start of the quiz and their achieved score. The play again is positioned below to encourage easy replayability.
 
 #### EXPLANATIONS
 
@@ -45,45 +55,54 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 ![screenshots of explanations](/assets/readme/answers.jpg)
 ![screenshots of explanations](/assets/readme/play-again-answers.jpg)
 
+- For the users who are more inquisitive/curious. I added an entirely separate info.index file that features a table of all the correct answers of each question with an explanation that expands upon just a one word answer. This provides an educational element to the quiz which provides a genuine use for places of learning i.e., schools/youth clubs etc. I ensured that the styling is consistent with the intro/quiz/score sections.
+
 #### 404 PAGE
 
 ![screenshots of error page](/assets/readme/dinosaur-error-page.jpg)
+
+- If a users so happens to stumble at the first hurdle and doens't reach the site. They will be greeted with this 404 error page that has a functioning button that takes them to the correct URL from githubs-pages section.
 
 ## TESTING
 
 ### VALIDATING
 
-- All HTML and CSS has been fully validated by W3C and W3Jigsaw - only issue is the forward slash but this is due to using prettier extension.
-- JAVASCRIPT is 100% validated using JShint. Just states what syntax is available in each version of javascript.
+Validating the code to ensure it passes with best practices maintained throughout.
 
 #### JAVASCRIPT
 
+- JAVASCRIPT is 100% validated using JShint. Just states what syntax is available in each version of javascript.
+
 #### HTML
 
+- W3C no errors apart from the forward slash with the prettier extension.
+
 #### CSS
+
+- W3Jigsaw no errors
 
 ### FUNCTIONALITY
 
 Using the catch & error, debugger, and console.log methods the following functions have been tested and results are as follows:
 
-| KEY FUNCTIONS                    | DESCRIPTOR                                                                                                                                       | RESULT |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| startQuiz()                      | When start button is clicked and the name is filled in = intro section is hidden and quiz section is displaying first Q.                         | PASS   |
-| startTimer()                     | Starts a timer that runs for 20 seconds and shows remaining time to user for each Q.                                                             | PASS   |
-| stopTimer()                      | Stop timer interval.                                                                                                                             | PASS   |
-| showQuestion()                   | Displays the current question whilst updating styling for each category ensuring answer buttons are available for the user to press.             | PASS   |
-| resetState()                     | resets the state of the quiz by removing previously stated answers.                                                                              | PASS   |
-| selectAnswer(e)                  | Handles selection of an answer option. Updates score if selected answer is correct, changes colour of button depending on correct/incorrect.     | PASS   |
-| showScore()                      | Does the calculation for the score                                                                                                               | PASS   |
-| showScoreSection(totalQuestions) | Displays final score out of the total number of questions that applies the username. Hides intro & quiz sections and displays the score section. | PASS   |
-| handleNextButton()               | Ensures next set of questions are displaying when answered. If all questions are complete it shows score section.                                | PASS   |
-| resetPage()                      | completing resets the quiz to ensure the quiz can be played again.                                                                               | PASS   |
-| initialization()                 | Wraps all of the event listeners to ensure they are loaded in when the DOM content is loaded - focussing on buttons.                             | PASS   |
+| KEY FUNCTIONS                    | DESCRIPTOR                                                                                                                                                        | RESULT |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| startQuiz()                      | When start button is clicked and the name is filled in = intro section is hidden and quiz section is displaying first Q.                                          | PASS   |
+| startTimer()                     | Starts a timer that runs for 20 seconds and shows remaining time to user for each Q.                                                                              | PASS   |
+| stopTimer()                      | Stop timer interval.                                                                                                                                              | PASS   |
+| showQuestion()                   | Displays the current question whilst updating styling for each category ensuring answer buttons are available for the user to press.                              | PASS   |
+| resetState()                     | resets the state of the quiz by removing previously stated answers.                                                                                               | PASS   |
+| selectAnswer(e)                  | Handles selection of an answer option. Updates score if selected answer is correct, changes colour of button depending on correct/incorrect.                      | PASS   |
+| showScore()                      | Does the calculation for the score                                                                                                                                | PASS   |
+| showScoreSection(totalQuestions) | Displays final score out of the total number of questions that applies the username. Hides intro & quiz sections and displays the score section.                  | PASS   |
+| handleNextButton()               | Ensures next set of questions are displaying when answered. If all questions are complete it shows score section.                                                 | PASS   |
+| resetPage()                      | completing resets the quiz to ensure the quiz can be played again.                                                                                                | PASS   |
+| initialization()                 | Wraps all of the event listeners to ensure they are loaded in when the DOM content is loaded - focussing on buttons inc. answer info, play again and next button. | PASS   |
 
 ## BUGS
 
 1. background images not covering entire background
-2. Adding end of quiz section remained on previous quiz section - made use of the display none/block method.
+2. Adding score section remained on quiz section - made use of the display none/block method.
 3. alert was showing prematurely - deleted startquiz call outside of functions
 4. clickable play again button on info page covering width of screen - fixed by using script instead of an a-tag.
 5. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions.
@@ -123,9 +142,9 @@ The site was deployed onto github pages:
 
 ## CREDIT
 
-- GREATSTACK: https://www.youtube.com/watch?v=PBcqGxrr9g8
+- GREATSTACK: https://www.youtube.com/watch?v=PBcqGxrr9g8 - base code that was expanded upon.
 - DAFONT for dinosaur themed font
-- PIXABAY
+- PIXABAY for images
 
 ### References:
 
