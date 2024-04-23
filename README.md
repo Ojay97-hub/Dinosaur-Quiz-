@@ -228,20 +228,30 @@ Lighthouse suggesting issue with performance which may be creating the issue as 
 
 ## DEPLOYMENT
 
-### Local - add
+### Local
 
-### Pages
+1. Open Terminal .
+2. Navigate to the root directory of your project.
+3. Initialize the local directory as a Git repository. By default, the initial branch is called main . ...
+4. Add the files in your new local repository. ...
+5. Commit the files that you've staged in your local repository.
 
-The site was deployed onto github pages:
+https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github - instructions located here.
 
-1. On the repository click settings.
-2. On the source click main branch.
-3. Click save.
-4. Page will refresh.
-5. Retrieve the page link under github pages header.
-6. Back on the repo page you can head to deployments.
-7. The link should display under github-pages deployments.
-8. The website was deployed on github and can be accessed here: https://ojay97-hub.github.io/Dinosaur-Quiz-/
+### Online
+
+The site was deployed onto github pages these were the steps I followed:
+
+1. Click "New repository" in the upper-right corner of GitHub.
+2. Name it "username.github.io", replacing "username" with your GitHub username.
+3. Go to the repository's "Settings".
+4. Click "Pages" in the sidebar.
+5. Under "Source", choose "Deploy from a branch".
+6. From the branch dropdown menu, select your publishing source.
+7. Optionally, edit the README.md file for your site's content.
+8. Visit "username.github.io" to see your new website. Changes may take up to 10 minutes to appear
+
+It can be accessed here: https://ojay97-hub.github.io/Dinosaur-Quiz-/
 
 ## FUTURE FEATURES
 
