@@ -10,6 +10,13 @@ The quiz consists of 3 main categories of land, sea, and air based dinosaur rela
 
 ## WIREFRAMES
 
+Below are my wireframes for each key section intro, quiz, score, and answers. Designed using Balsamiq:
+
+![wireframe for intro](/assets/readme/wireframes/intro.png)
+![wireframe for quiz](/assets/readme/wireframes/quiz.png)
+![wireframe for score](/assets/readme/wireframes/score.png)
+![wireframe for answers](/assets/readme/wireframes/answers.png)
+
 ## USER STORIES
 
 ### EDUCATOR
