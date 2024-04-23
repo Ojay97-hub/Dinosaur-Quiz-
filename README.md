@@ -77,7 +77,7 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 #### EXPLANATIONS
 
 ![screenshots of explanations](/assets/readme/explanation-options.jpg)
-![screenshots of explanations](/assets/readme/answers.jpg)
+![screenshots of explanations](/assets/readme/answers2.jpg)
 ![screenshots of explanations](/assets/readme/play-again-answers.jpg)
 
 - For the users who are more inquisitive/curious. I added an entirely separate info.index file that features a table of all the correct answers of each question with an explanation that expands upon just a one word answer. This provides an educational element to the quiz which provides a genuine use for places of learning i.e., schools/youth clubs etc. I ensured that the styling is consistent with the intro/quiz/score sections.
