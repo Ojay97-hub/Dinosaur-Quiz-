@@ -228,15 +228,25 @@ Lighthouse suggesting issue with performance which may be creating the issue as 
 
 ## DEPLOYMENT
 
-### Local
+### Locally
 
-1. Open Terminal .
+I deployed it locally to Github by following these steps:
+
+1. Open Terminal.
 2. Navigate to the root directory of your project.
-3. Initialize the local directory as a Git repository. By default, the initial branch is called main . ...
-4. Add the files in your new local repository. ...
+3. Initialize the local directory as a Git repository. By default, the initial branch is called main.
+4. Add the files in your new local repository.
 5. Commit the files that you've staged in your local repository.
 
 https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github - instructions located here.
+
+You can also Commit files to your repository by using these 3 steps in the terminal:
+
+1. git add .
+2. git commit -m
+3. git push
+
+It can also be done using the source control in your IDE (I used gitpod) and committing through there.
 
 ### Online
 
