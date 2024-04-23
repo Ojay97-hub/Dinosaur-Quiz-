@@ -230,23 +230,11 @@ Lighthouse suggesting issue with performance which may be creating the issue as 
 
 ### Locally
 
-I deployed it locally to Github by following these steps:
+To deploy my site locally you need to:
 
-1. Open Terminal.
-2. Navigate to the root directory of your project.
-3. Initialize the local directory as a Git repository. By default, the initial branch is called main.
-4. Add the files in your new local repository.
-5. Commit the files that you've staged in your local repository.
-
-https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github - instructions located here.
-
-You can also Commit files to your repository by using these 3 steps in the terminal:
-
-1. git add .
-2. git commit -m
-3. git push
-
-It can also be done using the source control in your IDE (I used gitpod) and committing through there.
+1. Open the repository at: https://github.com/Ojay97-hub/Dinosaur-Quiz-
+2. Click on the code button
+3. follow instructions under the local tab
 
 ### Online
 
