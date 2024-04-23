@@ -262,7 +262,8 @@ It can be accessed here: https://ojay97-hub.github.io/Dinosaur-Quiz-/
 - Add a set of quiz categories i.e., create a menu where user can pick from a list of topics.
 - Add background music.
 - Add a leaderboard for competition.
-- Randomization of the order of each quiz/question category - Increase timer speed for difficulty levels
+- Randomization of the order of each quiz/question category
+- Increase timer speed for difficulty levels
 
 ## CREDIT
 
