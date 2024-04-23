@@ -86,11 +86,21 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 ### RESPONSIVENESS
 
-#### MOBILE
-
-#### TABLET
-
-#### DESKTOP
+| DIMENSION           | AREA   | RESPONSIVENESS                              | RESULT |
+| ------------------- | ------ | ------------------------------------------- | ------ |
+| MOBILE - 344x882    | Intro  | Sized well with screen                      | PASS   |
+| MOBILE - 344x882    | Quiz   | Sized well with screen                      | PASS   |
+| MOBILE - 344x882    | Score  | Sized well with screen                      | PASS   |
+| MOBILE - 344x882    | Answer | Table fits the screen width and is readable | PASS   |
+| MOBILE - 344x882    | Answer | Background image pixelated stated in bugs   | FAIL   |
+| TABLET - 768x1024   | Intro  | Sized as intended                           | PASS   |
+| TABLET - 768x1024   | Quiz   | Sized as intended                           | PASS   |
+| TABLET - 768x1024   | Score  | Sized as intended                           | PASS   |
+| TABLET - 768x1024   | Answer | Sized as intended                           | PASS   |
+| DESKTOP - 1920x1080 | Intro  | Sized as intended                           | PASS   |
+| DESKTOP - 1920x1080 | Quiz   | Sized as intended                           | PASS   |
+| DESKTOP - 1920x1080 | Score  | Sized as intended                           | PASS   |
+| DESKTOP - 1920x1080 | Answer | Sized as intended                           | PASS   |
 
 ### VALIDATING
 
@@ -98,15 +108,49 @@ Validating the code to ensure it passes with best practices maintained throughou
 
 #### JAVASCRIPT
 
-- JAVASCRIPT is 100% validated using JShint. Just states what syntax is available in each version of javascript.
+Validated using JShint.
+
+- script.js:
+  There are 19 functions in this file.
+
+Function with the largest signature take 2 arguments, while the median is 0.
+
+Largest function has 17 statements in it, while the median is 3.
+
+The most complex function has a cyclomatic complexity value of 4 while the median is 1.
+
+- info.js:
+  There is only one function in this file.
+
+It takes no arguments.
+
+This function contains only one statement.
+
+Cyclomatic complexity number for this function is 1.
 
 #### HTML
 
-- W3C no errors apart from the forward slash with the prettier extension.
+Validated using W3C - main issue being the forward slash with prettier extension.
+
+- index.html:
+
+  ![screenshots of index.html validation](/assets/readme/validation/index-validated.png)
+
+- info.html:
+
+  ![screenshots of info.html validation](/assets/readme/validation/info-validated.png)
 
 #### CSS
 
-- W3Jigsaw no errors
+Validated using W3Jigsaw.
+
+- style.css:
+
+  ![screenshots of style.css validation](/assets/readme/validation/style-validated.png)
+
+- info.css:
+
+  ![screenshots of info.css validation](/assets/readme/validation/info-css-validated.png)
 
 ### FUNCTIONALITY
 
