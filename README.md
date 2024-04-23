@@ -212,12 +212,17 @@ Using the catch & error, debugger, and console.log methods the following functio
 ### WAVE - ADD OTHER PAGES
 
 ![screenshot of wave](/assets/readme/wave-all-good.jpg)
+
+![screenshot of wave](/assets/readme/wave-answerspage.png)
 Wave showing the all clear for no errors.
 
 ### LIGHTHOUSE - ADD OTHER PAGES
 
 ![screenshot of lighthouse](/assets/readme/lighthouse-greenlight.jpg)
 Lighthouse showing the all clear for all categories.
+
+![screenshot of lighthouse](/assets/readme/lighthouse-answerpage.png)
+Lighthouse suggesting issue with performance which may be creating the issue as stated in the bug.
 
 ## DEPLOYMENT
 
