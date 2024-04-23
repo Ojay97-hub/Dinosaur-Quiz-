@@ -27,11 +27,17 @@ Below are my wireframes for each key section intro, quiz, score, and answers. De
 
 ### EDUCATOR
 
-- As an educator I would want to use this...
+- As an educator in a primary school this would be a great tool to deliver engaging lessons to the children when teaching prehistoric topics which would include dinosaurs.
+- Having a quiz that is simple such as this is helps the teaching takes place as the children would be able to use it without any challenges or hurdles that would prevent learning from tkinng place.
+- Following that, a quiz that has instructions and provides feedback is very important to ensure the children are focussed and thus are in a mental state to absorb information without feeling like they are unsure of what to do.
+- As an educator I believe it is very vital to plan lessons that have variation and include other ways of teaching and gamifying is a very effective way of going about it.
 
 ### STUDENT
 
-- As a student...
+- As a student who loves prehistoric topics I would very much enjoy partaking in a themed and interactive quiz to challenge my current knowledge.
+- Its good to be challenged but it is also better to understand where you went wrong so that you can learn from your mistakes so having a quiz that responds to my actions with information is something I would use more over another quiz that didn't provide any feedback.
+- Adding onto to the previous point, as a student going one step above just feedback. Having an answers and explanations section is something I would be very interested in as it provides a great opportunity to not only know where I/you went wrong but also being enlightened with greater detail about the answers such as context, dates, and comparisons etc is something where my learning would excel.
+- As a student it is important to know whether you are improving or not. So having a score there to keep track of your understanding is a key tool to keep me motivated and to want to do better next time; so I really value having the score at the end.
 
 ## DEFENSIVE USER EXPERIENCE
 
