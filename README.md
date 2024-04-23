@@ -35,7 +35,7 @@ Below are my wireframes for each key section intro, quiz, score, and answers. De
 
 This project set out to build an interactive front-end site that responds to users' actions, to allow them to actively engage with data, and alter the way the site displays the information to achieve their preferred goals. Whilst reducing human error as much as possible and providing a smooth ride throughout the course of the interaction.
 
-### TARGET AUDIENCE:
+### TARGET AUDIENCE
 
 Given the simplicity and "easy-to-use" design. The quiz can be used as a fun educational tool for young children who may be studying prehistoric topics at school. Gamifying education is always beneficial for learning in a few ways 1. keeps engagement levels high 2. the scoring feature will entice children to improve upon their previous score 3. the score may also induce a competitive nature between their fellow friends and students.
 
@@ -85,6 +85,26 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 ![screenshots of error page](/assets/readme/dinosaur-error-page.jpg)
 
 - If a users so happens to stumble at the first hurdle and doens't reach the site. They will be greeted with this 404 error page that has a functioning button that takes them to the correct URL from githubs-pages section.
+
+## STYLING AND DESIGN
+
+The main highlight for me as a javascript learner was being able to use javascript to manipulate css styling using this particular code:
+
+![screenshots of css-styling javascript](/assets/readme/design/css-styling-with-script.jpg)
+
+### Land
+
+![screenshots of land design](/assets/readme/design/land-design.jpg)
+
+### Sea
+
+![screenshots of air design](/assets/readme/design/marine-design.jpg)
+
+### Air
+
+![screenshots of sea design](/assets/readme/design/air-design.jpg)
+
+By applying this kind of styling I thought it was beneficial to the immersion of the quiz and given the predominant target audience of children I believe the quiz would become far more engaging as the body background images of dinosaurs really bring it to life. Furthermore, the clear match up with the colouring of quiz area and title really helps to provide a sense of progression through the quiz as each category of questions are completed.
 
 ## TESTING
 
