@@ -10,7 +10,9 @@ The main javascript techniques used are as follows:
 
 ## SCREENSHOTS
 
-![screenshots of website](/assets/readme/responsive-screenshots2.jpg)
+![screenshots of website](/assets/readme/responsive-screenshot3.jpg)
+
+https://ui.dev/amiresponsive?url=https://ojay97-hub.github.io/Dinosaur-Quiz-/index.html
 
 ## WIREFRAMES
 
@@ -250,10 +252,16 @@ The site was deployed onto github pages:
 
 ## CREDIT
 
-- GREATSTACK: https://www.youtube.com/watch?v=PBcqGxrr9g8 - base code that was expanded upon.
+### GREATSTACK YOUTUBER
+
+https://www.youtube.com/watch?v=PBcqGxrr9g8 - the youtube video tutorial
+
+https://drive.google.com/file/d/1m0ynWx4mJzlvCQXgumMLgi6k7K_ucfDm/view?usp=sharing - the source code
+
 - DAFONT for dinosaur themed font
 - PIXABAY for images
 - Asked chatGPT for solutions to bugs and areas of improvement i.e., the play again button was taking up width of info.html screen.
+- favicon.io for the favicon
 
 ## COMMITS
 
