@@ -92,7 +92,7 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 ![screenshots of error page](/assets/readme/dinosaur-error-page.jpg)
 
-- If a users so happens to stumble at the first hurdle and doens't reach the site. They will be greeted with this 404 error page that has a functioning button that takes them to the correct URL from githubs-pages section.
+- If a users so happens to stumble at the first hurdle and doesn't reach the site. They will be greeted with this 404 error page that has a functioning button that takes them to the correct URL from githubs-pages section.
 
 ## STYLING AND DESIGN
 
@@ -123,7 +123,7 @@ By applying this kind of styling I thought it was beneficial to the immersion of
 | MOBILE - 344x882    | Intro  | Sized well with screen                      | PASS   |
 | MOBILE - 344x882    | Quiz   | Sized well with screen                      | PASS   |
 | MOBILE - 344x882    | Score  | Sized well with screen                      | PASS   |
-| MOBILE - 344x882    | Answer | Table fits the screen width and is readable | PASS   |
+| MOBILE - 344x882    | Answer | Table is readable but isn't width of screen | PASS   |
 | MOBILE - 344x882    | Answer | Background image pixelated stated in bugs   | FAIL   |
 | TABLET - 768x1024   | Intro  | Sized as intended                           | PASS   |
 | TABLET - 768x1024   | Quiz   | Sized as intended                           | PASS   |
@@ -213,7 +213,7 @@ Using the catch & error, debugger, and console.log methods the following functio
 
 ### Unfixed Bugs
 
-1. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved.
+1. Table in info.html has responsiveness issues with galaxy fold dimension but is readable. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixelated due to stretching, which I believe is to do with the table sizing.
 
 ## ACCESSIBILITY
 
