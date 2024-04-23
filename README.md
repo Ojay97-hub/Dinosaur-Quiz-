@@ -4,6 +4,10 @@ This is a simple dinosaur quiz that showcases the application of javascript, htm
 
 The quiz consists of 3 main categories of land, sea, and air based dinosaur related questions where the user firstly inputs their name, presses start quiz to then enjoy answering the 12 questions, which have 4 multiple choice answers. At completion the quiz says well done "x" you have scored "x" out of 12. They are then offered to play again or go to more info, which will take them to a quiz answers and explanation page, that features a play again button to direct them back to the beginning.
 
+The main javascript techniques used are as follows:
+
+- Event Handling - DOM Manipulation - String Manipulation - Conditional Statements - Loops - Functions - Arrays & Objects - Timeouts/Intervals - CSS Styling - Error Handling - Global Variables - Logical Operators
+
 ## SCREENSHOTS
 
 ![screenshots of website](/assets/readme/responsive-screenshots2.jpg)
@@ -35,7 +39,7 @@ This project set out to build an interactive front-end site that responds to use
 
 Given the simplicity and "easy-to-use" design. The quiz can be used as a fun educational tool for young children who may be studying prehistoric topics at school. Gamifying education is always beneficial for learning in a few ways 1. keeps engagement levels high 2. the scoring feature will entice children to improve upon their previous score 3. the score may also induce a competitive nature between their fellow friends and students.
 
-### KEY DEFENSIVE MEASURES - STATE CONNECTIONS BETWEEN CODE AND DESIGN WHERE POSSIBLE
+### KEY DEFENSIVE MEASURES
 
 #### INSTRUCTIONS
 
@@ -82,7 +86,7 @@ Given the simplicity and "easy-to-use" design. The quiz can be used as a fun edu
 
 - If a users so happens to stumble at the first hurdle and doens't reach the site. They will be greeted with this 404 error page that has a functioning button that takes them to the correct URL from githubs-pages section.
 
-## TESTING - ADD SCREENSHOTS
+## TESTING
 
 ### RESPONSIVENESS
 
@@ -111,7 +115,8 @@ Validating the code to ensure it passes with best practices maintained throughou
 Validated using JShint.
 
 - script.js:
-  There are 19 functions in this file.
+
+There are 19 functions in this file.
 
 Function with the largest signature take 2 arguments, while the median is 0.
 
@@ -120,7 +125,8 @@ Largest function has 17 statements in it, while the median is 3.
 The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
 - info.js:
-  There is only one function in this file.
+
+There is only one function in this file.
 
 It takes no arguments.
 
@@ -179,8 +185,7 @@ Using the catch & error, debugger, and console.log methods the following functio
 
 ### Unfixed Bugs
 
-1. Had a go at creating randomization for the questions. However, I couldn't manage to keep the styling to follow the random questions - not resolved/abandoned.
-2. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved.
+1. Table in info.html has responsiveness issues with galaxy fold dimension. I have tried smaller fonts, overscroll and padding changes. The background image also appears pixalated due to stretching, which I believe is to do with the table sizing. - not resolved.
 
 ## ACCESSIBILITY
 
@@ -224,6 +229,10 @@ The site was deployed onto github pages:
 - DAFONT for dinosaur themed font
 - PIXABAY for images
 - Asked chatGPT for solutions to bugs and areas of improvement i.e., the play again button was taking up width of info.html screen.
+
+## COMMITS
+
+I have noticed that my commits have inconsistencies in regards to capitalization, mostly lower case but in some instances I have used uppercase. Future projects will hone in on maintaining lower-capitalization.
 
 ### References:
 
